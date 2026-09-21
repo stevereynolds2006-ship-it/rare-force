@@ -12,17 +12,19 @@ Source lives in `games/rare-force/`.
 Need Node.js 22+ and a browser wallet on **Robinhood mainnet (chain 4663)** holding a hardwired Generations NFT (generation ≥ 1).
 
 ```bash
-git clone https://github.com/spokesz/friendsdk.git
-cd friendsdk
-git clone https://github.com/stevereynolds2006-ship-it/rare-force.git /tmp/rare-force
-cp -R /tmp/rare-force/games/rare-force games/rare-force
-npm ci
-npm run dev:game -- games/rare-force
+git clone https://github.com/stevereynolds2006-ship-it/rare-force.git
+cd rare-force
+npm install
+npm run dev          # http://localhost:4173
+npm run dev:lan      # phone on the same Wi-Fi: http://YOUR_LAN_IP:4173
 ```
 
-Open the printed URL (usually `http://localhost:4173`), connect the wallet, pick your Friend.
+Connect the wallet, pick your Friend. On a phone use the JUMP / FIRE pads.
 
-On a phone, open that same URL on your Wi-Fi. If the phone cannot see `localhost`, use your computer's LAN IP (`http://192.168.x.x:4173`). Use the on-screen JUMP / FIRE pads.
+Public preview (after the first Actions run and Pages is enabled on `gh-pages`):
+https://stevereynolds2006-ship-it.github.io/rare-force/
+
+In the repo: **Settings → Pages → Deploy from a branch → `gh-pages` / (root)**.
 
 ## Modes
 
@@ -66,3 +68,10 @@ No live contracts. Label stays on screen: simulated RF.
 ## Settings
 
 Mute, reduced motion, retry on failed artwork. Game honors the runtime `paused` flag.
+
+## Checks
+
+```bash
+npm run check
+npm run build
+```
