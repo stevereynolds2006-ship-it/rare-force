@@ -1,0 +1,13 @@
+{
+  "name": "Rare Force",
+  "consumable": "Supply drop",
+  "price": "1000000000000000000",
+  "outcomes": [
+    { "name": "Dented canteen", "chanceBps": 1800, "reward": "0" },
+    { "name": "Field ration", "chanceBps": 2600, "reward": "250000000000000000" },
+    { "name": "Extra magazine", "chanceBps": 2200, "reward": "500000000000000000" },
+    { "name": "Spread kit", "chanceBps": 1600, "reward": "1000000000000000000" },
+    { "name": "Life medal", "chanceBps": 1200, "reward": "1500000000000000000" },
+    { "name": "Hero bounty", "chanceBps": 600, "reward": "3000000000000000000" }
+  ]
+}
